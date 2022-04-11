@@ -88,7 +88,7 @@ body {
         display: inline-flex;
       }
         #log .message .author .badges .subscriber-icon {
-          display: none;
+          display: none; /* If you want the sub badges to appear, just comment this line */ /* display: none; */
         }
 
 /* Emotes within the messages */
