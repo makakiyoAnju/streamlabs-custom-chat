@@ -7,7 +7,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [JS](code/functions.js)
 
 ## Upcoming Features
-- Custom change of aspect depending on Twitch Subscription Tier
+Currently none. But if I can implement things, I'll update the codes and such.
 
 ## Update logs
-- Nothing as of yet
+- `2022-04-11` Added function where subscription will change depending on the tier and changes the aspect of it.
