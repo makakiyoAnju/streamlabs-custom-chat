@@ -1,5 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/85c11596f04944470089a2cae2d7d298?family=Visby+Round+CF+Medium);
-@font-face {font-family: "Visby Round CF Medium"; src: url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.eot"); src: url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.woff") format("woff"), url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/85c11596f04944470089a2cae2d7d298.svg#Visby Round CF Medium") format("svg"); }
+@font-face {font-family: "Visby Round CF Bold";
+    src: url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/89cab462df01ab3846f362d717bea59b.svg#Visby Round CF Bold") format("svg"); /* iOS 4.1- */
+}
 
 * {
     box-sizing: border-box;
@@ -11,9 +17,8 @@ html, body {
 }
 
 body {
-    font-family: 'Visby Round CF Medium';
+    font-family: 'Visby Round CF Bold';
     font-size: {font_size};
-  	font-weight: normal;
     line-height: 1em;
     color: {text_color};
 }
@@ -118,7 +123,6 @@ img#pic {
     height: 1em;
     margin-right: 2px;
     vertical-align: middle;
-
   }
   .name {
     left: -2px;
@@ -126,6 +130,7 @@ img#pic {
     vertical-align: top;
     text-transform: lowercase;
     text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    font-weight: bold;
   }
 
 /* Just to move and align things to the right for the subscribers' messages */
@@ -140,20 +145,22 @@ img#pic {
   display: inline-block;
   padding: 5px 12px 6px;
   line-height: 1em;
-  background: rgba(255, 255, 255, 1);
 }
   .bubbleLeft {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(91,91,91,1) !important;
 		border-radius: 5px 15px 15px 15px;
     transform-origin: left top; /* Where the animation is starting from */
   }
   .bubbleRight {
+    background: rgba(26,25,26,1);
+    color: rgba(255,255,255,1) !important;
 		border-radius: 15px 5px 15px 15px;
     transform-origin: right top; /* Where the animation is starting from */
   }
-    .bubbleLeft span, 
-		.bubbleRight span {
+    /*.chat span {
       mix-blend-mode: difference;
-    }
+    }*/
 
 /* Animation for the chat's messages*/
 #log .message .author, 
