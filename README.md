@@ -4,7 +4,7 @@ This uses Streamlabs' Chat Box widget to have the users' Twitch profile pic show
 *You can also change the font size and color within the Streamlabs Chat box widget setting without messing with the codes.*
 
 ##### Preview
-![preview](https://user-images.githubusercontent.com/40627143/160465881-bf89c370-1695-4b1c-92b4-03bb61bf8c31.png)
+![chatpreview](https://cdn.discordapp.com/attachments/920180817962090516/961130530689155122/preview-chatbubbleSMS.gif)
 
 ## Instructions
 
@@ -25,7 +25,7 @@ Once added, make sure you hit save. Now you want to copy your Client ID (or keep
 Login to your [Streamlabs](https://streamlabs.com/) dashboard. <br />
 
 Now go and click `All Widgets` in the left side navigation then **Chat Box** (or Streamlabs Desktop/SLOBS Chat Box widget). <br />
-![chatpreview](https://cdn.discordapp.com/attachments/920180817962090516/961130530689155122/preview-chatbubbleSMS.gif) <br />
+![leftnavipreview](https://user-images.githubusercontent.com/40627143/160467839-43a584fb-223f-4bc7-957d-8bba53456c28.png) <br />
 
 Find `Enable Custom HTML/CSS` and have it as `Enabled` selected. <br />
 
