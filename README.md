@@ -58,7 +58,7 @@ var accessToken = '{Your OAuth token here}';
 ```
 
 Insert/paste all the necessary keys that you need as mentioned above. <br />
-- `{Your UserID\BoardcasterID}` is just your Twitch user ID. You can get your ID from [Twitch Channel ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/)
+- `{Your UserID\BoardcasterID}` is just your Twitch user ID. You can get your ID from [Twitch Channel ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) & and enter your Twitch name.
 - `{Your Client ID here}` is the ID from the application you made at Twitch Developer.
 - `{Your OAuth token here}` is the generated token from [Twitch OAuth Token Generator](https://twitchapps.com/tokengen/).
 
