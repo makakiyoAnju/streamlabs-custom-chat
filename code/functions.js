@@ -83,16 +83,18 @@ document.addEventListener('onEventReceived', function(obj) {
     
     if (subTier > 999) {				
       	const subElems = displayName !== null ? document.getElementsByClassName(`${displayName}-id`) : document.getElementsByClassName('-id');
+      	const subTierClass = subTier == 3000 ? 'tier3' : subTier == 2000 ? 'tier2' : 'tier1';
       
         for (const subElem of subElems) {
           subElem.querySelector(".chat").classList.replace('bubbleLeft', 'bubbleRight');
           subElem.classList.add('justifyRight');
+          subElem.querySelector(".chat").classList.replace('tier', subTierClass);
 
           $(document).ready(function() {
             $(`.message-${displayName}-avatar`).each(function() {
                 $(this).insertAfter($(this).parent().find('.message'));
             });
-          });
+          });          
         }
     }
   }).catch((error) => {
