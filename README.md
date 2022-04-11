@@ -1,10 +1,15 @@
-# Streamlabs - Chat with Avatars
-This uses Streamlabs' Chat Box widget to have the users' Twitch profile pic showing along side the chat message. <br />
+# Custom Streamlabs Chat
+This uses Streamlabs' Chat Box widget with custom coding enabled. <br />
 
 *You can also change the font size and color within the Streamlabs Chat box widget setting without messing with the codes.*
 
 ##### Preview
 ![chatpreview](https://cdn.discordapp.com/attachments/920180817962090516/961130530689155122/preview-chatbubbleSMS.gif)
+
+##### Features
+- Twitch profile pic
+- Changes some aspect if user is subscribed
+- Functions & looks like iMessage/Android SMSing
 
 ## Instructions
 
@@ -47,34 +52,30 @@ The most important part in editting are the following: <br/>
 ##### JS
   
 ```js 
+const boardId = '{Your UserID\BoardcasterID}';
 const clientId = '{Your Client ID here}';
 var accessToken = '{Your OAuth token here}';
-const defaultAvatarUrl = '{Your default Image URL here}';
-```
-
-##### HTML
-  
-```html
-<img class="message-{from}-avatar" src="{Your Default Image URL here}" width="32" height="32" alt="">
 ```
 
 Insert/paste all the necessary keys that you need as mentioned above. <br />
+- `{Your UserID\BoardcasterID}` is just your Twitch user ID
 - `{Your Client ID here}` is the ID from the application you made at Twitch Developer.
 - `{Your OAuth token here}` is the generated token from [Twitch OAuth Token Generator](https://twitchapps.com/tokengen/).
-- `{Your default Image URL here}` is the URL of your choice that you want it to look like if those on Twitch don't have a profile image.
 
 ---
-
-##### Advanced coding/editting
-You are welcome to edit anything if you know what you are doing.
 
 ## Fequently Asked Questions
 - The profile pic goes back to my default image even though the Twitch user has a profile pic. Why?
   - It is most likely the OAuth token expired or is wrong. I suggest generating a new token.
 - I want the avatar pic to be smaller/bigger
-  -  Just edit the values in the HTML where is says `width` & `height` of the `IMG` tag.
+  -  Just edit the values in the HTML where is says `height` of `img#pic` in the `CSS`. The `width` will just automatically adjust when the `height` is changed.
 - I want to see how it looks without spamming my chat. How?
   -  Just add `?simulate=1` at the end of your widget URL (won't work with the built-in Chat box widget in Streamlabs Desktop). Sadly you won't be able to see how it looks with long chat messages.
+- What's the point of `defaultAvatarUrl` if it isn't used?
+  - I'm still trying to figure out how to make it use it if it uses Twitch default pic. Basically, W.I.P. But it will use the image that if for some reason the Twitch API just suddenly stops functioning (happened to me before).
 
 ## Credits 
 Original source code from [drakantas](https://github.com/drakantas)
+
+## Update logs
+
