@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Visby Round CF';
+    font-size: {font_size};
+  	font-weight: 700;
+    line-height: 1em;
+    color: {text_color};
+}
+
+.colon {
+  display: none;
+}
+
+#log {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#log > div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+ 	animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
+  -webkit-animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
+}
+
+#log > div:last-child {
+  padding-bottom: 0;
+}
+
+#log > div.deleted {
+  visibility: hidden;
+}
+
+#log .meta, 
+#log .message {
+  display: inline-block;
+}
+  /* Avatar PFP section */
+  #log .meta {
+    text-align: right;
+    margin: 0 7px;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  /* User message section */
+  #log .message {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    vertical-align: middle !important;
+  }
+    #log .message .author {
+      display: block;
+      flex-wrap: nowrap;
+      align-items: center;
+      text-shadow: none;
+      margin: 3px 1px;
+      transform-origin: left center;
+    }
+      #log .message .author .badges {
+        display: inline-flex;
+      }
+
+/* Emotes within the messages */
+#log .emote {
+  display: inline;
+  box-sizing: border-box;
+  position: relative;
+  background-image: none !important;
+  vertical-align: bottom;
+}
+  #log .emote > img {
+    display: inline;
+    width: auto;
+    height: 1em;
+  }
+
+/* The avatar that shows up on the left of the message/name */
+img#pic {
+  display: flex;
+  border-radius: 50%;
+  margin: 8px;
+  vertical-align: top;
+  width: auto;
+  height: 32px;
+}
+
+/* Name and badge section */
+.badge, 
+.name {
+  display: inline;
+  position: relative;
+}
+  .badge {
+    top: 2px;
+    height: 1em;
+    margin-right: 2px;
+    vertical-align: middle;
+
+  }
+  .name {
+    left: -2px;
+    margin: 4px 0;
+    vertical-align: top;
+    text-transform: lowercase;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+  }
+
+/* Just to move and align things to the right for the subscribers' messages */
+.justifyRight {
+  justify-content: flex-end !important;
+  text-align: right !important;
+}
+
+/* Adds a positioning and background to the chatter's message */
+.bubbleLeft, 
+.bubbleRight {
+  display: inline-block;
+  padding: 5px 12px 6px;
+  line-height: 1em;
+  background: rgba(255, 255, 255, 1);
+}
+  .bubbleLeft {
+		border-radius: 5px 15px 15px 15px;
+    transform-origin: left top; /* Where the animation is starting from */
+  }
+  .bubbleRight {
+		border-radius: 15px 5px 15px 15px;
+    transform-origin: right top; /* Where the animation is starting from */
+  }
+
+/* Animation for the chat's messages*/
+#log .message .author, 
+.bubbleLeft, 
+.bubbleRight {
+  animation: slideZoom 0.55s ease forwards;
+  -webkit-animation: slideZoom 0.55s ease forwards;
+}
+
+@keyframes slideZoom {
+  from {
+    zoom: 0; 
+  	-webkit-transform: scale(0);
+  }
+  to {
+    zoom: 1; 
+    -webkit-transform: scale(1);
+  }
+}
