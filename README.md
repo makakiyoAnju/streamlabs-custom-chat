@@ -7,7 +7,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [JS](code/functions.js)
 
 ## Upcoming Features
-- Custom change of aspect depending on Tier subscriptions
+- Custom change of aspect depending on Twitch Subscription Tier
 
 ## Update logs
 - Nothing as of yet
