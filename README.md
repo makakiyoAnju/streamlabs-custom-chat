@@ -1,4 +1,4 @@
-# Instructions
+### Instructions
 Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-custom-chat/wiki)
 
 ### Codes
