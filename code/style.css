@@ -138,6 +138,9 @@ img#pic {
   justify-content: flex-end !important;
   text-align: right !important;
 }
+	.justifyRight .message .author {
+    transform-origin: right center !important;
+	}
 
 /* Adds a positioning and background to the chatter's message */
 .bubbleLeft, 
