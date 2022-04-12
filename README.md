@@ -19,5 +19,9 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [CSS](code/style.css)
 - [JS](code/functions.js)
 
+# Credits 
+- Original source code from [drakantas](https://github.com/drakantas)
+- Modified codes & themed by me
+
 ## Update logs
 - `2022-04-11` Added function where subscription will change depending on the tier and changes the aspect of it.
