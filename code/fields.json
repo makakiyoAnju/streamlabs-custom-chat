@@ -19,6 +19,20 @@
         "type": "colorpicker",
         "value": "#FFFFFF"
     },
+    "avatar_size": {
+        "label": "Avatar Size (in px)",
+        "type": "slider",
+        "name": "",
+        "value": 32,
+        "max": 240,
+        "min": 12,
+        "steps": 1
+    },
+    "default_avatar": {
+        "label": "Default Avatar",
+        "type": "image-input",
+        "value": "https://cdn.streamlabs.com/users/13779702/library/sakura-flower.png"
+    },
     "bubbleLeft_background": {
         "label": "Default Background Color",
         "type": "colorpicker",
@@ -38,10 +52,5 @@
         "label": "Background Color (Tier 3)",
         "type": "colorpicker",
         "value": "#b3cafd"
-    },
-    "default_avatar": {
-        "label": "Default Avatar",
-        "type": "image-input",
-        "value": "https://cdn.streamlabs.com/users/13779702/library/sakura-flower.png"
     }
 }
