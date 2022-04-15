@@ -25,7 +25,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - Original source code from [drakantas](https://github.com/drakantas)
 - Modified codes & themed by me
 
-## Update logs
+## Latest Changes
 ###### 2022-04-15
 - Added "Custom Fields" <sup>[/code/fields.json](code/fields.json)</sup>
 - Added a way to just use Streamlabs' upload for the "Default Avatar".
