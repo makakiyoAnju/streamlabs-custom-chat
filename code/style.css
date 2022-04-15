@@ -109,7 +109,7 @@ img#pic {
   margin: 8px;
   vertical-align: top;
   width: auto;
-  height: 32px;
+  height: {avatar_size};
 }
 
 /* Name and badge section */
