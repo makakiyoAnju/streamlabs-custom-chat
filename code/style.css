@@ -150,22 +150,22 @@ img#pic {
   line-height: 1em;
 }
   .bubbleLeft {
-    background: rgba(255, 255, 255, 1);
-    color: rgba(91,91,91,1) !important;
+    background: {bubbleLeft_background};
+    color: {bubbleLeft_text} !important;
     border-radius: 5px 15px 15px 15px;
     transform-origin: left top; /* Where the animation is starting from */
   }
   .bubbleRight {
-    background: rgba(26,25,26,1);
-    color: rgba(255,255,255,1) !important;
+    /*background: rgba(26,25,26,1);
+    color: rgba(255,255,255,1) !important;*/
     border-radius: 15px 5px 15px 15px;
     transform-origin: right top; /* Where the animation is starting from */
   }
     /*.chat .tier1 span, 
-			.chat .tier2 span, 
-			.chat .tier3 span {
-      mix-blend-mode: difference;
-    }*/
+      .chat .tier2 span, 
+      .chat .tier3 span {
+      	mix-blend-mode: difference;
+      }*/
 
 .tier1 {
   color: {sub_color_tier1} !important;
