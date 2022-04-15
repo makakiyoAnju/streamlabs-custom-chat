@@ -25,7 +25,7 @@
         "name": "",
         "value": 32,
         "max": 240,
-        "min": 12,
+        "min": 0,
         "steps": 1
     },
     "default_avatar": {
