@@ -1,0 +1,47 @@
+{
+    "bubbleLeft_text": {
+        "label": "Default Text Color",
+        "type": "colorpicker",
+        "value": "#5b5b5b"
+    },
+    "sub_text_tier1": {
+        "label": "Text Color (Tier 1)",
+        "type": "colorpicker",
+        "value": "#FFFFFF"
+    },
+    "sub_text_tier2": {
+        "label": "Text Color (Tier 2)",
+        "type": "colorpicker",
+        "value": "#FFFFFF"
+    },
+    "sub_text_tier3": {
+        "label": "Text Color (Tier 3)",
+        "type": "colorpicker",
+        "value": "#FFFFFF"
+    },
+    "bubbleLeft_background": {
+        "label": "Default Background Color",
+        "type": "colorpicker",
+        "value": "#FFFFFF"
+    },
+    "sub_color_tier1": {
+        "label": "Background Color (Tier 1)",
+        "type": "colorpicker",
+        "value": "#C8ACFF"
+    },
+    "sub_color_tier2": {
+        "label": "Background Color (Tier 2)",
+        "type": "colorpicker",
+        "value": "#ffc3f3"
+    },
+    "sub_color_tier3": {
+        "label": "Background Color (Tier 3)",
+        "type": "colorpicker",
+        "value": "#b3cafd"
+    },
+    "default_avatar": {
+        "label": "Default Avatar",
+        "type": "image-input",
+        "value": "https://cdn.streamlabs.com/users/13779702/library/sakura-flower.png"
+    }
+}
