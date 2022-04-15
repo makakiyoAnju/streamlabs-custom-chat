@@ -2,7 +2,7 @@
 	const boardId = '{Your UserID\BoardcasterID}';
 
 	// URLs to use
-	const defaultAvatarUrl = 'https://cdn.discordapp.com/attachments/769382511359950879/957319535667576842/sakura-flower.png'; // You are more than welcome to change this
+	const defaultAvatarUrl = `{default_avatar}`;
 
 	// I wouldn't touch this unless you know what you are doing
 	const endpoint = channelName => `https://api.twitch.tv/helix/users?login=${channelName}`;
