@@ -161,22 +161,24 @@ img#pic {
     border-radius: 15px 5px 15px 15px;
     transform-origin: right top; /* Where the animation is starting from */
   }
-    /*.chat span {
+    /*.chat .tier1 span, 
+			.chat .tier2 span, 
+			.chat .tier3 span {
       mix-blend-mode: difference;
     }*/
 
-.tier1, .tier2, .tier3 {
-  color: rgba(255,255,255,1) !important;
+.tier1 {
+  color: {sub_color_tier1} !important;
+  background: {sub_color_tier1} !important;
 }
-  .tier1 {
-    background: rgba(200,172,255,1) !important;
-  }
-  .tier2 {
-    background: rgba(255,195,243,1) !important;
-  }
-  .tier3 {
-    background: rgba(179,202,253,1) !important;
-  }
+.tier2 {
+  color: {sub_color_tier2} !important;
+  background: {sub_color_tier2} !important;
+}
+.tier3 {
+  color: {sub_text_tier3} !important;
+  background: {sub_color_tier3} !important;
+}
 
 /* Animation for the chat's messages*/
 #log .message .author, 
