@@ -25,5 +25,5 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - Modified codes & themed by me
 
 ## Update logs
-- `2022-04-15` Add "Custom Fields", updated .html, .css, .js files to work with the custom fields.
+- `2022-04-15` Add "Custom Fields", updated .html, .css, .js files to work with the custom fields. Also added a way to just use Streamlabs' upload for the "Default Avatar".
 - `2022-04-11` Added function where subscription will change depending on the tier and changes the aspect of it.
