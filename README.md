@@ -8,6 +8,7 @@ This uses Streamlabs' Chat Box widget with custom coding enabled. HTML, CSS, JS,
 
 **Features**
 - Twitch profile pic
+- Customizable functions to fit your appeal
 - Changes some aspect depending on subscription & sub tier
 - Functions & looks like iMessage/Android SMSing
 
