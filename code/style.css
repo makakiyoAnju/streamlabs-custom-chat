@@ -41,7 +41,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   text-align: left;
-  padding-bottom: 12px;
+  padding-bottom: {chatSpacing}px;
   box-sizing: border-box;
   animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
   -webkit-animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
