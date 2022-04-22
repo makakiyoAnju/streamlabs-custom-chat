@@ -1,4 +1,27 @@
 {
+    "useFontPick": {
+        "label": "Font Selection",
+        "type": "dropdown",
+        "options": {
+            "optionA": "Default",
+            "optionB": "Font Picker"
+        },
+        "value": "optionA"
+    },
+    "fontPicker": {
+        "label": "Font Family",
+        "type": "fontpicker",
+        "value": "Comfortaa"
+    },
+    "chatSpacing": {
+        "label": "Chat Spacing (in px)",
+        "type": "slider",
+        "name": "px",
+        "value": 12,
+        "max": 120,
+        "min": 0,
+        "steps": 1
+    },
     "bubbleLeft_text": {
         "label": "Default Text Color",
         "type": "colorpicker",
