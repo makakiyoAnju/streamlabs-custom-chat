@@ -24,6 +24,8 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 # Credits 
 - Original source code from [drakantas](https://github.com/drakantas)
 - Modified codes & themed by me
+- OAuth generator by [Twitch OAuth Token Generator](https://twitchapps.com/tokengen/)
+- [Twitch ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) by StreamWeasels
 
 ## Latest Changes
 ###### 2022-04-15
