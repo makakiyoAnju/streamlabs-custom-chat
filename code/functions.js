@@ -12,6 +12,9 @@
 	var accessToken = '{Your OAuth token here}'; // Only change if you need a new token
   const cache = {};
 
+var fontSel = document.getElementById("fontSel").value;
+document.body.style.fontFamily = fontSel !== "optionA" ? `"{fontPicker}"` : "Visby Round CF Bold";
+
 document.addEventListener('onLoad', function(obj) {
 	// obj will be empty for chat widget
 	// this will fire only once when the widget loads
