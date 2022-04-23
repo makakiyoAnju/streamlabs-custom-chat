@@ -3,14 +3,14 @@ This uses Streamlabs' Chat Box widget with custom coding enabled. HTML, CSS, JS,
 
 *You can also change the font size within the Streamlabs Chat box widget setting without messing with the codes. You can pretty much change anything that you want within the "Custom Fields"*
 
-**Preview** <br/>
-![chatpreview](https://cdn.discordapp.com/attachments/920180817962090516/961130530689155122/preview-chatbubbleSMS.gif)
-
 **Features**
 - Twitch profile pic
 - Customizable functions to fit your appeal
 - Changes some aspect depending on subscription & sub tier
 - Functions & looks like iMessage/Android SMSing
+
+**Preview** <br/>
+![chatpreview](https://cdn.discordapp.com/attachments/920180817962090516/961130530689155122/preview-chatbubbleSMS.gif)
 
 ## Instructions
 Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-custom-chat/wiki)
