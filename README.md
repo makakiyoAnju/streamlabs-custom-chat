@@ -29,6 +29,6 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 
 ## Latest Changes
 ###### 2022-04-23
-- Font selection function fully operational. Check lines 16 to 27 in [function.js](code/functions.js)
+- Font selection function fully operational. Check lines 16 to 27 in [function.js](code/functions.js).
 
 *If you want to see other updates & changes, check out: [UPDATELOG.md](UPDATELOG.md)*
