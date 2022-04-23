@@ -28,10 +28,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [Twitch ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) by StreamWeasels
 
 ## Latest Changes
-###### 2022-04-22
-- Preparing codes for font selection. Some fonts work.
-  - Line 2 <sup>[HTML](https://github.com/makakiyoAnju/streamlabs-custom-chat/blob/aabaed29496243a7ebe89aa87838256376f03e4d/code/index.html#L2)</sup>, Line 2-15 <sup>[CSS](https://github.com/makakiyoAnju/streamlabs-custom-chat/blob/aabaed29496243a7ebe89aa87838256376f03e4d/code/fields.json#L2)</sup>, & Line 15-16 <sup>[JS](https://github.com/makakiyoAnju/streamlabs-custom-chat/blob/aabaed29496243a7ebe89aa87838256376f03e4d/code/functions.js#L15)</sup>
-- Added a way to change the spacing between messages. 
-  - Line 44 <sup>[CSS](https://github.com/makakiyoAnju/streamlabs-custom-chat/blob/aabaed29496243a7ebe89aa87838256376f03e4d/code/style.css#L44)</sup> & Line 16-24 <sup>[JSON](https://github.com/makakiyoAnju/streamlabs-custom-chat/blob/aabaed29496243a7ebe89aa87838256376f03e4d/code/fields.json#L16)</sup>
+###### 2022-04-23
+- Font selection function fully operational. Check lines 16 to 27 in [function.js](code/functions.js)
 
 *If you want to see other updates & changes, check out: [UPDATELOG.md](UPDATELOG.md)*
