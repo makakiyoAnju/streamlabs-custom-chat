@@ -28,7 +28,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [Twitch ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) by StreamWeasels
 
 ## Latest Changes
-###### 2022-04-23
-- Font selection function fully operational. Check lines 16 to 27 in [function.js](code/functions.js).
+###### 2022-05-01
+- Fixed text color being the same as background for tier messages
 
 *If you want to see other updates & changes, check out: [UPDATELOG.md](UPDATELOG.md)*
