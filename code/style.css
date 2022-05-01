@@ -167,11 +167,11 @@ img#pic {
       }*/
 
 .tier1 {
-  color: {sub_color_tier1} !important;
+  color: {sub_text_tier1} !important;
   background: {sub_color_tier1} !important;
 }
 .tier2 {
-  color: {sub_color_tier2} !important;
+  color: {sub_text_tier2} !important;
   background: {sub_color_tier2} !important;
 }
 .tier3 {
