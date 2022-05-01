@@ -1,4 +1,7 @@
 ## Update logs
+###### 2022-05-01
+- Fixed text color being the same as background for tier messages
+
 ###### 2022-04-23
 - Font selection function fully operational. Check lines 16 to 27 in [function.js](code/functions.js).
 
