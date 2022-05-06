@@ -1,5 +1,5 @@
 ## Update logs
-###### 2022-05-01
+###### 2022-05-05
 - Fixed text color being the same as background for tier 1/2 messages
 
 ###### 2022-04-23
