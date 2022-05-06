@@ -160,11 +160,6 @@ img#pic {
     border-radius: 15px 5px 15px 15px;
     transform-origin: right top; /* Where the animation is starting from */
   }
-    /*.chat .tier1 span, 
-      .chat .tier2 span, 
-      .chat .tier3 span {
-      	mix-blend-mode: difference;
-      }*/
 
 .tier1 {
   color: {sub_text_tier1} !important;
