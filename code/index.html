@@ -1,5 +1,7 @@
 <!-- item will be appened to this layout -->
 <input type="hidden" id="fontSel" value="{useFontPick}">
+<input type="hidden" id="defaultAlign" value="{defaultMsgAlign}">
+<input type="hidden" id="subscriberAlign" value="{subscribeMsgAlign}">
 <div id="log" class="sl__chat__layout"></div>
 
 <!-- chat item -->
@@ -11,7 +13,7 @@
       	<div class="badges"></div>
       	<div class="name">{from}</div>
       </div>
-      <div class="chat bubbleLeft"><span>{message}</span></div>
+      <div class="chat tier"><span>{message}</span></div>
     </div>
   </div>
 </script>
