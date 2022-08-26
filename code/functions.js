@@ -31,7 +31,7 @@ document.addEventListener('onLoad', function(obj) {
 	// this will fire only once when the widget loads
 });
 
-document.addEventListener('onEventReceived', function(obj) {
+document.addEventListener('onEventReceived', function(obj) {  
   if (!obj || typeof obj.detail === 'undefined' || obj.detail === null) { return; }
   
   const { from: username, messageId, tags, userid } = obj.detail;
@@ -79,6 +79,19 @@ document.addEventListener('onEventReceived', function(obj) {
     }
   });
   
+  // Switches the alignment of the default messages 
+  const subElems = displayName !== null ? document.getElementsByClassName(`${displayName}-id`) : document.getElementsByClassName('-id');
+  for (const subElem of subElems) {
+    if (document.getElementById("defaultAlign").value == "defaultRight") { 
+      subElem.querySelector(".chat").classList.add('bubbleRight');
+      subElem.classList.add('justifyRight');
+
+      $(document).ready(function() { $(`.message-${displayName}-avatar`).each(function() { $(this).insertAfter($(this).parent().find('.message')); }); });
+    } else {
+      subElem.querySelector(".chat").classList.add('bubbleLeft');
+    }
+  }
+  
   // Check if the user is subscribed to the channel  
   fetch(`https://api.twitch.tv/helix/subscriptions?broadcaster_id=${boardId}&user_id=${userId}`, {
     "method": 'GET',
@@ -87,31 +100,28 @@ document.addEventListener('onEventReceived', function(obj) {
       'Authorization': "Bearer " + accessToken
     }
   }).then(s => {
-    if (s.status != 200 || s.status == 404 || s.status ==  401) {
-      return;
-    }
     return s.json();
   }).then(({ data }) => {
     const [ subUser ] = data;
     const subTier = subUser['tier'];
+    const subTierClass = subTier == 3000 ? 'tier3' : subTier == 2000 ? 'tier2' : 'tier1';
     
-    if (subTier > 999) {				
-      	const subElems = displayName !== null ? document.getElementsByClassName(`${displayName}-id`) : document.getElementsByClassName('-id');
-      	const subTierClass = subTier == 3000 ? 'tier3' : subTier == 2000 ? 'tier2' : 'tier1';
-      
-        for (const subElem of subElems) {
-          subElem.querySelector(".chat").classList.replace('bubbleLeft', 'bubbleRight');
-          subElem.classList.add('justifyRight');
-          subElem.querySelector(".chat").classList.replace('tier', subTierClass);
+    const subElems = displayName !== null ? document.getElementsByClassName(`${displayName}-id`) : document.getElementsByClassName('-id');
+    
+    for (const subElem of subElems) {
+      subElem.querySelector(".chat").classList.replace('tier', subTierClass);
 
-          $(document).ready(function() {
-            $(`.message-${displayName}-avatar`).each(function() {
-                $(this).insertAfter($(this).parent().find('.message'));
-            });
-          });          
-        }
+      if (document.getElementById("subscriberAlign").value == "subRight") { 
+        subElem.querySelector(".chat").classList.replace('bubbleLeft', 'bubbleRight');
+        subElem.classList.add('justifyRight');
+        $(document).ready(function() { $(`.message-${displayName}-avatar`).each(function() { $(this).insertAfter($(this).parent().find('.message')); }); });
+      } else {
+        subElem.querySelector(".chat").classList.replace('bubbleRight', 'bubbleLeft');
+        subElem.classList.remove('justifyRight');
+        $(document).ready(function() { $(`.message-${displayName}-avatar`).each(function() { $(this).insertBefore($(this).parent().find('.message')); }); });
+      }
+      
+      //console.log(`${displayName}`, `${subTierClass}`);
     }
-  }).catch((error) => {
-    return;
-  });
+  }).catch((error) => { return; });
 });
