@@ -1,4 +1,14 @@
 ## Update logs
+###### 2022-08-26
+- The following were updated for a new function below:
+  - [index.html](code/index.html)
+  - [style.css](code/style.css)
+  - [functions.js](code/functions.js)
+  - [fields.json](code/fields.json)
+- Added feature where you can change alignment for both default & subscribers' messages.
+
+*Please be aware that I coded this really badly, and it is a mess. But it should be functional. Notify me if there are any issues.*
+
 ###### 2022-05-05
 - Fixed text color being the same as background for tier 1/2 messages
 
