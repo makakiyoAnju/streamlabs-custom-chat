@@ -1,4 +1,22 @@
 {
+    "defaultMsgAlign": {
+        "label": "Default Message Alignment:",
+        "type": "dropdown",
+        "options": {
+            "defaultLeft": "Left",
+            "defaultRight": "Right"
+        },
+        "value": "defaultLeft"
+    },
+    "subscribeMsgAlign": {
+        "label": "Subscriber Message Alignment:",
+        "type": "dropdown",
+        "options": {
+            "subLeft": "Left",
+            "subRight": "Right"
+        },
+        "value": "subRight"
+    },
     "useFontPick": {
         "label": "Font Selection",
         "type": "dropdown",
