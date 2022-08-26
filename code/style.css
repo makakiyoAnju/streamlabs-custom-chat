@@ -8,18 +8,19 @@
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,0);
 }
 
 body {
-    font-size: {font_size};
-    line-height: 1em;
-    color: {text_color};
+  font-size: {font_size};
+  line-height: 1em;
+  color: {text_color};
 }
 
 .colon {
@@ -43,8 +44,8 @@ body {
   text-align: left;
   padding-bottom: {chatSpacing}px;
   box-sizing: border-box;
-  animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
-  -webkit-animation: fadeIn 1s ease forwards, fadeOut 1s ease {message_hide_delay} forwards;
+ 	animation: fadeIn 1s ease forwards; /*, fadeOut 1s ease {message_hide_delay} forwards;*/
+  -webkit-animation: fadeIn 1s ease forwards; /*, fadeOut 1s ease {message_hide_delay} forwards;*/
 }
 
 #log > div:last-child {
@@ -108,7 +109,7 @@ img#pic {
   margin: 8px;
   vertical-align: top;
   width: auto;
-  height: {avatar_size};
+  height: {avatar_size}px;
 }
 
 /* Name and badge section */
@@ -137,29 +138,35 @@ img#pic {
   justify-content: flex-end !important;
   text-align: right !important;
 }
-  .justifyRight .message .author {
+	.justifyRight .message .author {
     transform-origin: right center !important;
-  }
+	}
 
 /* Adds a positioning and background to the chatter's message */
 .bubbleLeft, 
 .bubbleRight {
+  background: {bubbleLeft_background};
+  color: {bubbleLeft_text};
   display: inline-block;
   padding: 6px 12px 5px;
   line-height: 1.05em;
 }
   .bubbleLeft {
-    background: {bubbleLeft_background};
-    color: {bubbleLeft_text} !important;
-    border-radius: 5px 15px 15px 15px;
+		border-radius: 5px 15px 15px 15px;
     transform-origin: left top; /* Where the animation is starting from */
   }
   .bubbleRight {
-    /*background: rgba(26,25,26,1);
-    color: rgba(255,255,255,1) !important;*/
-    border-radius: 15px 5px 15px 15px;
+		border-radius: 15px 5px 15px 15px;
     transform-origin: right top; /* Where the animation is starting from */
   }
+    /*.chat .tier1 span, 
+			.chat .tier2 span, 
+			.chat .tier3 span {
+      mix-blend-mode: difference;
+    }
+    .chat span {
+      overflow: hidden;
+    }*/
 
 .tier1 {
   color: {sub_text_tier1} !important;
