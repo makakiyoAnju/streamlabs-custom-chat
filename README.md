@@ -35,6 +35,7 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
   - [functions.js](code/functions.js)
   - [fields.json](code/fields.json)
 - Added feature where you can change alignment for both default & subscribers' messages.
+
 *Please be aware that I coded this really badly, and it is a mess. But it should be functional. Notify me if there are any issues.*
 
 *If you want to see other updates & changes, check out: [UPDATELOG.md](UPDATELOG.md)*
