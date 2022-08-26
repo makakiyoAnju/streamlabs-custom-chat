@@ -28,7 +28,12 @@ Go to the Wiki or by [clicking here](https://github.com/makakiyoAnju/streamlabs-
 - [Twitch ID Converter](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/) by StreamWeasels
 
 ## Latest Changes
-###### 2022-05-05
-- Fixed text color being the same as background for tier 1/2 messages
+###### 2022-08-26
+- The following were updated for a new function below:
+  - [index.html](code/index.html)
+  - [style.css](code/style.css)
+  - [functions.js](code/functions.js)
+  - [fields.json](code/fields.json)
+- Added feature where you can change alignment for both default & subscribers' messages.
 
 *If you want to see other updates & changes, check out: [UPDATELOG.md](UPDATELOG.md)*
